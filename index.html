@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Front-end</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="alert alert-success collapse" role="alert" id="myAlert">
+            <a href="#" class="close" data-dismiss="alert">&times</a>
+            <strong>Success</strong> Thanh toán thành công !
+        </div>
+        <div class="alert alert-success collapse" role="alert" id="myAlert1">
+                <a href="#" class="close" data-dismiss="alert">&times</a>
+                <strong>Success</strong> Reset thành công!
+            </div>
+        <form action="#" class="form" id="form-data" method="POST">
+            <div>
+                <span style="color:blue;font-size:3.5rem;">Dental Payment Form</span>
+            </div>
+            <div class="form-group row">
+                <label for="inputEmail3" for="name" class="col-sm-2 col-form-label">Tên khách hàng</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" name="name" id="txt1" placeholder="Nhập tên khách hàng...">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkb1">
+                        Cạo vôi
+                    </div>
+                </div>
+                <div class="col-sm-6">$100.000</div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkb2">
+                        Tẩy trắng
+                    </div>
+                </div>
+                <div class="col-sm-6">$1.200.000</div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkb3">
+                        chụp hình răng
+                    </div>
+                </div>
+                <div class="col-sm-6">$200.000</div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="number" min="0" max="32" value="0" id="txt3">
+                        Trám răng
+                    </div>
+                </div>
+                <div class="col-sm-4">$80.000</div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <div class="form-select">
+                        <label class="form-check-label" for="exampleCheck1">Discount:</label>
+                       <select id="mySelect">
+                           <option value="0">--SELECT--</option>
+                           <option value="0.1">10%</option>
+                           <option value="0.2">20%</option>
+                           <option value="0.3">30%</option>
+                           <option value="0.4">40%</option>
+                           <option value="0.5">50%</option>
+                       </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">Tổng cộng</div>
+                <div class="col-sm-2">
+                    <div class="form-check">
+                        <input class="form-control" type="text" name="number" id="txt2">
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto">
+                <button type="button" class="btn btn-danger" id="reset"><i class="fa fa-refresh"></i> Reset</button>
+                <button type="button" class="btn btn-warning" id="thanhtoan"><i class="fa fa-credit-card"></i> Tính tiền</button>
+                <button type="button" class="btn btn-success" id="luudb"><i class="fa fa-database" value="send" ></i> Lưu thông tin</button>
+            </div>
+        </form>
+
+    </div>
+    
+    <!-- Latest compiled and minified CSS & JS -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+   
+</body>
+
+
+</html>
